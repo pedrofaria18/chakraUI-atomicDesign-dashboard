@@ -20,13 +20,12 @@ export const IconNav = ({ clicked, icon }: IconNavProps) => {
       alignItems="center"
       justifyContent="center"
     >
-      {React.createElement(icon, {
-        style: {
-          color: clicked ? "#fff" : "#38b2ac",
-          width: "15px",
-          height: "15px",
-        }
-      })}
+      <Box
+        as={icon}
+        w="15px"
+        h="15px"
+        color={clicked ? "brand.0" : "teal.300"}
+      ></Box>
     </Box>
   );
 };
