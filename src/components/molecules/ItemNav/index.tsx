@@ -25,6 +25,7 @@ export const ItemNav = ({ active, icon, label, clicked }: ItemNavProps) => {
       borderWidth={active ? ".5px" : "none"}
       borderColor="gray.200"
       boxShadow={active ? "0px 3.5px 5.5px rgba(0, 0, 0, 0.02)" : "none"}
+      cursor="pointer"
       onClick={() => clicked(label)}
     >
       <IconNav active={active} icon={icon} />

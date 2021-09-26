@@ -2,9 +2,9 @@ import React from "react";
 
 import { ChakraProvider, Box } from "@chakra-ui/react";
 
-import { MenuNav } from "./components/organisms/MenuNav";
-
 import { theme } from "./styles/theme";
+
+import { MenuNav } from "./components/organisms/MenuNav";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
