@@ -6,25 +6,27 @@ import { IconType } from "react-icons";
 
 interface IconNavProps {
   icon: IconType;
-  clicked: boolean;
+  active: boolean;
 }
 
-export const IconNav = ({ clicked, icon }: IconNavProps) => {
+export const IconNav = ({ active, icon }: IconNavProps) => {
   return (
     <Box
       w="30px"
       h="30px"
-      bg={clicked ? "teal.300" : "brand.0"}
+      bg={active ? "teal.300" : "brand.0"}
       borderRadius="12px"
       d="flex"
       alignItems="center"
       justifyContent="center"
+      mr="12px"
+      boxShadow={active ? "none" : "0px 3.5px 5.5px rgba(0, 0, 0, 0.02)"}
     >
       <Box
         as={icon}
         w="15px"
         h="15px"
-        color={clicked ? "brand.0" : "teal.300"}
+        color={active ? "brand.0" : "teal.300"}
       ></Box>
     </Box>
   );

@@ -1,14 +1,15 @@
-import * as React from "react";
+import React from "react";
 
 import { ChakraProvider, Box } from "@chakra-ui/react";
 
+import { MenuNav } from "./components/organisms/MenuNav";
+
 import { theme } from "./styles/theme";
-import { ItemNav } from "./components/molecules/ItemNav";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
-    <Box textAlign="center" fontSize="xl">
-      <ItemNav />
+    <Box bg="brand.1" w="100vw" h="100vh" textAlign="center" fontSize="xl">
+      <MenuNav />
     </Box>
   </ChakraProvider>
 );

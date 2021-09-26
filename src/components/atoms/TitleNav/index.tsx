@@ -4,15 +4,16 @@ import { Text } from "@chakra-ui/react";
 
 interface TitleNavProps {
   label: string;
-  clicked: boolean;
+  active: boolean;
 }
 
-export const TitleNav = ({ clicked, label }: TitleNavProps) => {
+export const TitleNav = ({ active, label }: TitleNavProps) => {
   return (
     <Text
       fontSize="xs"
-      color={clicked ? "gray.700" : "gray.400"}
-      border={clicked ? "1px solid gray.200" : "0.5px solid gray.200"}
+      fontWeight="bold"
+      color={active ? "gray.700" : "gray.400"}
+      border={active ? "1px solid gray.200" : "0.5px solid gray.200"}
       lineHeight="base"
     >
       {label}
