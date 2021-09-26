@@ -24,7 +24,7 @@ interface ItemsNavProps {
   label: string;
 }
 
-export const MenuNav = () => {
+export const NavMenu = () => {
   const itemsNav: ItemsNavProps[] = [
     {
       icon: IoHome,
