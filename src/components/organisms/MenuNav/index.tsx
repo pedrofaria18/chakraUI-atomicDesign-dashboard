@@ -15,6 +15,9 @@ import { IconType } from "react-icons";
 
 import { ItemNav } from "../../molecules/ItemNav";
 import { SubtitleMenuNav } from "../../atoms/SubtitleMenuNav";
+import { Logo } from "../../atoms/Logo";
+import { LineMenuNav } from "../../atoms/LineMenuNav";
+import { CardNeedHelp } from "../../molecules/CardNeedHelp";
 
 interface ItemsNavProps {
   icon: IconType;
@@ -63,13 +66,11 @@ export const MenuNav = () => {
   };
 
   return (
-    <Box
-      maxW="246.5px"
-      h="1015.5px"
-      d="flex"
-      flexDir="column"
-      alignItems="center"
-    >
+    <Box maxW="246.5px" d="flex" flexDir="column" alignItems="center" pt="40px" pl="18px">
+      <Logo />
+
+      <LineMenuNav />
+
       {itemsNav.map((item, index) => (
         <ItemNav
           key={index}
@@ -91,6 +92,8 @@ export const MenuNav = () => {
           clicked={handleItemNav}
         />
       ))}
+
+      <CardNeedHelp />
     </Box>
   );
 };
