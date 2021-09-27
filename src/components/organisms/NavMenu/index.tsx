@@ -66,7 +66,15 @@ export const NavMenu = () => {
   };
 
   return (
-    <Box maxW="246.5px" d="flex" flexDir="column" alignItems="center" pt="40px" pl="18px">
+    <Box
+      maxW="246.5px"
+      d="flex"
+      flexDir="column"
+      alignItems="center"
+      pt="40px"
+      pl="18px"
+      mr="31px"
+    >
       <Logo />
 
       <LineMenuNav />
