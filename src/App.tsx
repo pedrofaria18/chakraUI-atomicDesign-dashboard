@@ -6,6 +6,7 @@ import { theme } from "./styles/theme";
 
 import { NavMenu } from "./components/organisms/NavMenu";
 import { Header } from "./components/organisms/Header";
+import { SectionDataCard } from "./components/organisms/SectionDataCard";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
@@ -13,6 +14,7 @@ export const App = () => (
       <NavMenu />
       <Box pr="22px" w="100%">
         <Header />
+        <SectionDataCard />
       </Box>
     </Box>
   </ChakraProvider>
